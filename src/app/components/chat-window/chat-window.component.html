@@ -1,0 +1,26 @@
+<mat-toolbar>
+    <span>Chatty Chat</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-icon-button (click)="logout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item *ngFor="let contact of contactList">
+        <div style="display: flex; align-items: center; justify-content: space-evenly;" (click)="openNewChat(contact._id)">
+          <img src="{{getProfilePicURL(contact.profile_pic)}}" style="height: 25px; width: 25px; border-radius: 50%;"/>
+          <span>{{contact.name}}</span>
+        </div>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+
+<mat-drawer-container class="container">
+    <mat-drawer #drawer class="sidenav" mode="side" opened>
+        <app-sidebar [user]="user" *ngIf="user"></app-sidebar>
+    </mat-drawer>
+    <app-main-area [user]="user" *ngIf="user"></app-main-area>
+</mat-drawer-container>
+  

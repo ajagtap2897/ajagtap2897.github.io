@@ -1,0 +1,9 @@
+<div class="chat" (click)="openChat()">
+    <img src={{getProfilePicURL(chat.user.profile_pic)}} alt="avatar"/>
+    <div class="about">
+        <div class="name">{{chat.user.name}}</div>
+        <div class="last_msg"> <mat-icon class="status" [ngStyle]="{ color: 'red' }">radio_button_checked</mat-icon> {{getStrippedText(chat.last_message.content || '')}}</div>
+    </div>
+</div>
+
+<!-- chat.is_online ? 'green' : -->

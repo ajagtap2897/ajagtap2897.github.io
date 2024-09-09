@@ -1,0 +1,9 @@
+<mat-card-content class="history-container" #sidenavContent>
+    <div [ngClass]="message.sender === user?._id ? 'sender' : 'receiver'" *ngFor="let message of messageList; let i = index">
+      <img src="{{getProfilePicURL(user)}}" matCardAvatar class="image"/>
+      <div>
+        <p class="rec-msg" >{{message.content}}</p>
+        <span [ngClass]="message.sender === user?._id ? 'sender-time' : 'receiver-time'">{{message.created_at | date:'yyyy-MM-dd HH:mm:ss'}}</span>
+     </div>
+    </div>
+</mat-card-content>

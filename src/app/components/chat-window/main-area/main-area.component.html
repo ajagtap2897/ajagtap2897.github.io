@@ -1,0 +1,11 @@
+<mat-card class="container" *ngIf="contact && messageList && user">
+    <app-chat-header [user]="contact"></app-chat-header>
+    <app-chat-history id="chat-history" style="overflow-y: auto; background-color: rgb(207, 204, 204);" [messageList]="messageList" [user]="user"></app-chat-history>
+    <div style="flex-grow: 1; background-color:rgb(207, 204, 204);"></div>
+    <app-chat-message style="background-color: rgb(207, 204, 204);" [user]="user" [contact]="contact"></app-chat-message>
+</mat-card>
+<mat-card class="container" *ngIf="!(contact && messageList)">
+    <mat-label>No Contact Selected</mat-label>
+</mat-card>
+
+  

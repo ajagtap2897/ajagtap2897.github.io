@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px;  /* Slightly thicker scrollbar for better usability */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2b2b2b; /* Subtle dark background for track */
+    border-radius: 10px;  /* Rounded corners for smoothness */
+    margin: 2px;  /* Adds some margin between the scrollbar and edges */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4e4e4e;  /* Smooth gray for the thumb */
+    border-radius: 10px;        /* Rounded for a modern look */
+    border: 2px solid #2b2b2b;  /* Slight inset border for thumb contrast */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #888888; /* Lighter color for thumb on hover */
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: #2b2b2b; /* Match corner of scrollbars */
+  }
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #4e4e4e #2b2b2b;
+  }
+  
+  /* Adds padding and a border for a more structured scrollbar container */
+  .scrollable-content {
+    padding: 5px;
+    border: 1px solid #333333; /* Thin border to outline the scrollable area */
+    border-radius: 10px;
+    overflow-y: auto;
+    height: 100%;
+  }
+  
+  

@@ -1,0 +1,7 @@
+<div style="padding: 5px; background-color: rgb(49, 49, 49);">
+    <ng-container *ngFor="let chat of chats; let i = index">
+      <app-chat [chat]="chat"></app-chat>
+      <div *ngIf="i < chats.length - 1" class="divider"></div>
+    </ng-container>
+  </div>
+  
