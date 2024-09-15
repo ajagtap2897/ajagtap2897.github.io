@@ -70,6 +70,8 @@ Since the backend is already hosted on an EC2 instance, the frontend will automa
 2. Fill in your username, email
 3. Click "Submit" to create a new account(you'll be redirected to the chatroom).
 
+![Login_Registration](https://github.com/user-attachments/assets/d4e8499c-3c7f-4f87-92f3-103fb2b69c2b)
+
 ### Accessing the Chat
 1. After logging in, you'll be redirected to the chatroom.
 2. Type a message in the input box and press the send icon to send.
