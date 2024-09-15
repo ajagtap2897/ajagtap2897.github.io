@@ -77,6 +77,9 @@ Since the backend is already hosted on an EC2 instance, the frontend will automa
 2. Type a message in the input box and press the send icon to send.
 3. Your messages, along with other user's messages, will appear in the chat window.
 
+![Mainscreen](https://github.com/user-attachments/assets/e61e0fd6-b4cf-4f48-acf9-e38bda83b04e)
+
+
 ---
 
 ## Development Status
